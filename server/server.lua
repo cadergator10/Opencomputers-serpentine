@@ -14,12 +14,12 @@ local thread = require("thread")
 local keyboard = require("keyboard")
 local uuid = require("uuid")
 
-local version = "4.0.3"
+local version = "4.0.4"
 
 local serverModules = "https://raw.githubusercontent.com/cadergator10/opencomputer-security-system/main/src/server/modules/modules.txt"
 
 local commands = {"setdevice","signIn","updateuserlist","loginfo","getquery","syncport","moduleinstall", "devModeChange","settingUpdate","integritySync"}
-local skipcrypt = {"loginfo","getquery","syncport"}
+local skipcrypt = {"loginfo","getquery","syncport"} --soon to be not used.
 
 local modules = {}
 local modulepath = "/modules"
